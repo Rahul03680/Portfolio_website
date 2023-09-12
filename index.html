@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul's-Portfolio</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Poppins:wght@500;700&family=Rubik+Iso&display=swap"
+    rel="stylesheet">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: rgb(6, 0, 71);
+        color: white;
+        font-family: 'Poppins', sans-serif;
+
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 90px;
+        background-color: rgb(179, 0, 94);
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 0 23px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    nav ul li a:hover {
+        color: blanchedalmond;
+        font-size: 1.03rem;
+
+    }
+
+    main hr {
+        border: 0;
+        background: #FF5F9E;
+        height: 1.2px;
+        margin: 40px 84px;
+    }
+
+    .left {
+        font-size: 2rem;
+    }
+
+    .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 150px 0;
+        align-items: center;
+    }
+
+    .firstSection>div {
+        width: 35%;
+    }
+
+    .leftSection {
+        font-size: 2.3rem;
+    }
+    .leftSection .bt {
+      
+        padding: 12px;
+        background: #FF5F9E;
+        color: #fff;
+        font-size: 1.3rem;
+        border-radius: 10px;
+        border: whitesmoke;
+    
+    }
+    .leftSection .bt a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .leftSection .bt:hover{
+        color: antiquewhite;
+        background:rgb(179, 0, 94);
+        font-size: 1.6rem;    }
+
+
+    .rightSection img {
+
+        width: 120%;
+        height: 0 50px;
+    }
+
+    .purple {
+        color: rgb(255, 95, 158);
+        /* color:rgb(233, 0, 100) ; */
+    }
+
+    #element {
+        color: rgb(255, 95, 158);
+    }
+
+    .secondSection {
+
+        max-width: 80vw;
+        margin: auto;
+        font-size: 1.5rem;
+
+    }
+
+    .secondSection h1 {
+        width: 18%;
+        font-size: 3rem;
+        margin: 0 610px;
+        background-color: rgb(255, 95, 158);
+        color: rgb(6, 0, 71);
+        ;
+    }
+
+
+
+
+    .secondSection .topSecond img {
+        width: 70%;
+
+
+
+    }
+
+    .secondSection .bottomSecond {
+
+        width: 0 200px;
+        border: 10px solid rgb(179, 0, 94);
+        padding: 50px;
+        margin: 10px;
+    }
+
+    .secondSection h2 {
+        margin: 40px 0;
+    }
+
+
+    body {
+        font-family: 'Source Sans Pro', Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.75;
+    }
+
+    #timeline {
+        display: flex;
+        background-color: rgb(6, 0, 71);
+
+        &:hover {
+            .tl-item {
+                width: 23.3333%;
+            }
+        }
+    }
+
+    .tl-item {
+        transform: translate3d(0, 0, 0);
+        position: relative;
+        width: 25%;
+        height: 100vh;
+        min-height: 600px;
+        color: #fff;
+        overflow: hidden;
+        transition: width 0.5s ease;
+
+        &:before,
+        &:after {
+            transform: translate3d(0, 0, 0);
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        &:after {
+            background: transparentize(rgb(179, 0, 94), 0.15);
+            opacity: 1;
+            transition: opacity 0.5s ease;
+        }
+
+        &:before {
+            background: linear-gradient(to bottom, rgb(255, 95, 158) 0%, rgb(179, 0, 94)75%);
+            z-index: 1;
+            opacity: 0;
+            transform: translate3d(0, 0, 0) translateY(50%);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        &:hover {
+            width: 30% !important;
+
+            &:after {
+                opacity: 0;
+            }
+
+            &:before {
+                opacity: 1;
+                transform: translate3d(0, 0, 0) translateY(0);
+                transition: opacity 1s ease, transform 1s ease 0.25s;
+            }
+
+            .tl-content {
+                opacity: 1;
+                transform: translateY(0);
+                transition: all 0.75s ease 0.5s;
+            }
+
+            .tl-bg {
+                filter: grayscale(0);
+            }
+        }
+    }
+
+    .tl-content {
+        transform: translate3d(0, 0, 0) translateY(25px);
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        margin: 0 1.618em;
+        top: 55%;
+        opacity: 0;
+
+        h1 {
+            font-family: 'Pathway Gothic One', Helvetica Neue, Helvetica, Arial, sans-serif;
+            text-transform: uppercase;
+            color: #1779cf;
+            font-size: 1.44rem;
+            font-weight: normal;
+        }
+    }
+
+    .tl-year {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 1;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+
+
+        p {
+            font-family: 'Pathway Gothic One', Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 2rem;
+            line-height: 0;
+        }
+    }
+
+    .tl-bg {
+        transform: translate3d(0, 0, 0);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-size: cover;
+        background-position: center center;
+        transition: filter 0.5s ease;
+        filter: grayscale(100%);
+    }
+
+    footer {
+        background-color: rgb(179, 0, 94);
+
+    }
+
+    .footer {
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+    }
+
+    .footer ul {
+        list-style-type: none;
+
+    }
+
+    .footer ul li a{
+        text-decoration: none;
+        color: rgb(248, 248, 248);
+    }
+    .footer ul li a:hover{
+        color: antiquewhite;
+        font-size: 1.04rem ;
+    }
+
+    .footer>div {
+        width: 223px;
+    }
+
+    footer .footer-rights {
+        text-align: center;
+        color: bisque;
+        padding: 12px 0;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Skills</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My Name is <span class="purple">Rahul</span>
+                <div>& I am a Passionate</div>
+                <span id="element"></span>
+                <div class="btn"></div>
+                    <button class="bt"><a href="https://github.com/Rahul03680/About_ME/blob/main/Rahul%20Sharma%20Resume.pdf">Download CV</a></button>
+                    
+            </div>
+            
+
+            <div class="rightSection">
+                <img src="bg1.png" alt="" width="1080" height="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <h1>
+                <center>About Me</center>
+            </h1>
+            <div class="topSecond">
+                <center><img src="profile.png" alt=""></center>
+            </div>
+
+
+            <div class="bottomSecond">
+                <center>Hello! I'm Rahul Sharma, a passionate and proactive 3rd-year Computer Science Engineering
+                    student with a fervor for innovation and technology. Over the years, my journey in the world of
+                    computer science has been nothing short of exhilarating. I thrive on exploring the limitless
+                    possibilities that this field offers, and I'm here to share my story with you.</center>
+
+
+            </div>
+            <h2>Projects timeline :</h2>
+        </section>
+
+        <section id="timeline">
+
+            <div class="tl-item">
+
+                <div class="tl-bg" style="background-image: url(https://placeimg.com/801/801/nature)"></div>
+
+                <div class="tl-year">
+                    <p class="f1 heading--sanSerif">09/2020</p>
+                </div>
+
+                <div class="tl-content">
+                    <h1><a href="https://github.com/Rahul03680/TrixcyAi">TRIXCY AI</a></h1>
+                    <p>A personal AI Assistant which uses Speech Recognition tool to
+                        recognize speech of the user and do the task assigned by the user.<br>
+                        Example- Sending Emails, Searching on Google, Playing
+                        videos/songs.<br>
+                        Further development was done using OpenAi API, which can use
+                        Generative models which can generate texts or images from given
+                        prompts by the user.</p>
+                </div>
+
+            </div>
+
+            <div class="tl-item">
+
+                <div class="tl-bg" style="background-image: url(https://placeimg.com/802/802/nature)"></div>
+
+                <div class="tl-year">
+                    <p class="f2 heading--sanSerif">09/2022</p>
+                </div>
+
+                <div class="tl-content">
+                    <h1 class="f3 text--accent ttu"><a
+                            href="https://github.com/Rahul03680/Number_plate_detection">Number plate detection</a></h1>
+                    <p>A Machine learning Model which uses OpenCV to detect the
+                        number plate of a vehicle and can store the data in JSON format.</p>
+                </div>
+
+            </div>
+
+            <div class="tl-item">
+
+                <div class="tl-bg" style="background-image: url(https://placeimg.com/803/803/nature)"></div>
+
+                <div class="tl-year">
+                    <p class="f2 heading--sanSerif">11/2022</p>
+                </div>
+
+                <div class="tl-content">
+                    <h1 class="f3 text--accent ttu">People face and age prediction Model</h1>
+                    <p>It uses YOLOV5 and OpenCV to detect the face of a person and
+                        predict the age of that person using some segmented data.</p>
+                </div>
+
+            </div>
+
+            <div class="tl-item">
+
+                <div class="tl-bg" style="background-image: url(https://placeimg.com/800/800/nature)"></div>
+
+                <div class="tl-year">
+                    <p class="f2 heading--sanSerif">04/2023</p>
+                </div>
+
+                <div class="tl-content">
+                    <h1 class="f3 text--accent ttu"><a href="https://github.com/Rahul03680/Groot">Groot</a></h1>
+                    <p>An Android application which uses machine learning features to
+                        analyze the disease pattern on a plant leaf image and predict
+                        whether the plant is diseased or healthy.<br>
+                        If the plant is found diseased then some precautionary measures
+                        will be displayed to the user on the android application.<br>
+                        Technology used- Python, Keras, HTML,CSS, Flutter.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Socials:</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/rahul-sharma-9541931a0/">
+                        Linkedin
+                        </a></li>
+                    <li><a href="https://www.linkedin.com/in/rahul-sharma-9541931a0/">Github</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li><a href="https://instagram.com/https.rahul_x?igshid=MzMyNGUyNmU2YQ==">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100006692951498">Facebook</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li><a href="https://www.reddit.com/user/Standard-Fish-376">Reddit</a></li>
+                    <li><a href="https://in.pinterest.com/kumarrahulsharma03/">Pinterest</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">Copyrights&#169;www.Rahulportfolio.com | All rights reserved</div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Engineering Student.', 'Web Developer.', 'AI/ML Developer.', 'Video Editor.', 'Writer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
